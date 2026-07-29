@@ -30,7 +30,7 @@ phases:
     commands:
       - echo Build completed. Image URI
       - echo $IMAGE_URI
-      - printf '{"ImageURI":"%s"}' $IMAGE_URI > imageDetail.json
+      - printf '[{"ImageURI":"%s","ContainerName":"%s"}]' $IMAGE_URI $CONTAINER_NAME > imageDetail.json
       - cat imageDetail.json
       - pwd
       - ls -la
