@@ -36,6 +36,7 @@ app.get("/", async (req, res) => {
       <h3>Container name: <span style='color: pink'>${containerName}</span></h3>
       <h3>Container's IP Address: <span style='color: pink'>${ip}</span></h3>
       <h3>Application Version: <span style='color: coral'>V${version}</span></h3>
+      <h3>Background Color: <span style='color: coral'>${bgColor}</span></h3>
     <body>
     </html>
     `;
